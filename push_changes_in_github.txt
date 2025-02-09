@@ -61,3 +61,16 @@ OR
 -->git push
 
 
+
+--------------------------------------------------------------------
+If while committing it is asking for Username and password.
+
+go to Setting --> developer option ------> token classic ->generate and tick on all checkboxes and save
+
+to confirm add command in gitbash
+
+
+=>git config --global credential.helper store
+
+
+
