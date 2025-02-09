@@ -1,0 +1,63 @@
+SSH Key Generation & GitHub Setup (Short Notes)
+
+SSH Key Generation & GitHub Setup
+Step 1: Generate SSH Key
+Open Git Bash.
+Run the command:
+ssh-keygen -t rsa -b 4096 -C "aman__@gmail.com"
+
+
+
+Press Enter to save it in the default location (~/.ssh/id_rsa).
+Set a passphrase (or leave it blank).
+
+
+
+Step 2: Copy SSH Public Key
+Run the following command to copy the key:
+
+
+cat ~/.ssh/id_rsa.pub
+
+
+Copy the displayed SSH key.
+
+Step 3: Add SSH Key to GitHub
+Go to GitHub → Settings → SSH and GPG keys.
+Click New SSH Key.
+Paste the copied SSH key and Save.
+-----------------------------------------------------------------------------------------
+
+
+git clone link
+
+Now open folder in vscode and add files 
+
+--------------------------------------------------------------------------------------------
+
+now to add chnges in GitHub
+
+Open the folder and do gitbash here
+=>git init
+=>git remote -v
+
+=>git remote add origin https://github.com/YOUR-USERNAME/YOUR-REPO.git
+
+=>git status
+
+=>git add .
+
+=>git commit -m "Your commit message"
+
+=>git push -u origin main
+
+OR 
+
+=>git push -u origin master
+
+=>After making new edits, just run:
+-->git add .
+-->git commit -m "Updated changes"
+-->git push
+
+
